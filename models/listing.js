@@ -30,10 +30,10 @@ const listingSchema = new Schema({
   location: String,
   position:{
     lng:{
-      type:Number
+      type:String
     },
     lat:{
-      type:Number
+      type:String
     }
   },
   country: String,
