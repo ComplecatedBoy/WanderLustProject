@@ -5,12 +5,12 @@ const { listingSchema,reviewSchema }=require("./Schema.js")
 const tt = require('@tomtom-international/web-sdk-services/dist/services-node.min.js');
 
 module.exports.SetCooardinates=async(req,res,next)=>{
-  // const crdnts= await  tt.services.geocode({
-  //   key: process.env.MAP_KEY,
-  //   query:req.body.listing.location,
-  //   bestResult:true
-  // })
- req.body.listing.position={lng:0,lat:0};
+  const crdnts= await  tt.services.geocode({
+    key: process.env.MAP_KEY,
+    query:req.body.listing.location,
+    bestResult:true
+  })
+ req.body.listing.position=crdnts.position;
  next();
 }
 
