@@ -1,0 +1,196 @@
+body{
+font-family: 'Plus Jakarta Sans', sans-serif !important;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+.container{
+    flex:1;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.navbar,.nav-container{
+
+  min-height: 5rem;
+  background-color:white;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+.f-info {
+  background-color: #e6e5e5;
+  height: 8rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.f-info > * {
+  width: 100%;
+}
+
+.f-info-socials,
+.f-info-links,
+.f-info-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-socials i {
+  font-size: 1.3rem;
+  color: #1a0e0e;
+  margin-right: 1rem;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+/* cards */
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: .5rem 0 !important;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-text{
+    font-weight: 600;
+}
+
+/* Card Effect on Hover */
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: .2;
+    background-color: white;
+}
+
+.show-img{
+  height: 400px;
+}
+/* form -control */
+.add-button{
+    background-color: #42b6fe !important;
+    color:whitesmoke !important;
+    font-weight: 800 !important;
+}
+
+.btns{
+  display: flex;
+  gap: 1rem;
+}
+
+.edit-btn{
+  background-color: rgb(78, 78, 243) !important;
+  border: none !important;
+  font-weight: 800 !important;
+}
+.delete-btn{
+  background-color: #fe424d !important;
+  border:none !important;
+  font-weight: 800 !important;
+}
+
+#mapDiv{
+  width: 100%;
+  height: 50vh;
+  border:#0000007a 1px solid;
+  box-shadow:#00000052 0px 0px 10px;
+}
+
+
+/* Navbar search option */
+.search-btn ,.search-btn:hover{
+  background-color: #fe424d !important;
+  color:white !important;
+  border-radius:25px !important;
+}
+.search-form .search-btn i{
+  display: inline;
+  margin-right: 5px !important;
+}
+.search-form .search-inp{
+  border-radius: 25px !important;
+  padding: 5px 50px !important;
+}
+
+/* Filters.......... */
+.filters-container{
+  display: flex;
+}
+.filters{
+  display: flex;
+  overflow: hidden;
+  margin-right:1rem;
+ }
+ .filter{
+  text-align: center;
+  margin-right: 2.5rem;
+  margin-top: 1rem;
+  opacity: .8;
+ }
+ .filter p{
+  font-size: .8rem;
+ }
+ .filter:hover{
+  opacity: 1;
+ }
+
+ /* tax-switch */
+ .tax-toggle{
+  min-width: fit-content;
+  margin-top: .6rem;
+  border: solid 1px rgba(181, 152, 152, 0.405);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding:0 25px;
+  height: 3.2rem;
+ }
+ .tax-toggle label{
+  scale: .9;
+  font-weight: 600;
+ }
+ .tax-toggle input{
+  scale: 1.4;
+ }
+@media screen and (max-width:900px){
+  .tax-toggle{
+    display: none;
+  }
+}
+
+/* mapMarker */
+#marker {
+  background-image: linear-gradient(to bottom,red blue);
+  background-size: cover;
+  width: 50px;
+  height: 70px;
+}
